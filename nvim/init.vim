@@ -80,7 +80,7 @@ map <leader>t :TagbarToggle<CR>
 " Mapping
 """""""""""""""""""""""""""""""""""""
 
-nnoremap <silent> <leader><leader> :source ~/.config/nvim/init.vim<CR>
+nnoremap <Leader><Leader> :source $MYVIMRC<cr>
 
 " Moving lines
 " nnoremap <A-j> :m .+1<CR>==
