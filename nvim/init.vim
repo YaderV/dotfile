@@ -15,6 +15,9 @@ call plug#begin()
  Plug 'preservim/tagbar'
  Plug 'jeetsukumaran/vim-buffergator'
  Plug 'ctrlpvim/ctrlp.vim'
+ Plug 'rust-lang/rust.vim'
+ Plug 'axelf4/vim-strip-trailing-whitespace'
+ Plug 'mg979/vim-visual-multi'
  if has('nvim') || has('patch-8.0.902')
    Plug 'mhinz/vim-signify'
  else
