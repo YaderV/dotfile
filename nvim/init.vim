@@ -18,6 +18,7 @@ call plug#begin()
  Plug 'rust-lang/rust.vim'
  Plug 'axelf4/vim-strip-trailing-whitespace'
  Plug 'mg979/vim-visual-multi'
+ Plug 'alvan/vim-closetag'
  if has('nvim') || has('patch-8.0.902')
    Plug 'mhinz/vim-signify'
  else
@@ -79,6 +80,9 @@ let g:go_highlight_functions = 1
 
 " Tagbar
 map <leader>t :TagbarToggle<CR>
+
+" close tags
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml'
 
 " Mapping
 """""""""""""""""""""""""""""""""""""
