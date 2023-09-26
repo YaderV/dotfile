@@ -42,6 +42,7 @@ set incsearch                   " incremental search
 set autoindent                  " indent a new line the same amount as the line just typed
 set wildmode=longest,list	    " get bash-like tab completions
 filetype plugin indent on	    " allow auto-indenting depending on file type
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab " manually set indentation for yaml files
 syntax on			            " syntax highlighting
 set clipboard=unnamedplus	    " using system clipboard
 filetype plugin on
@@ -59,7 +60,7 @@ set updatetime=100              " Required for vim-signify
 " set mouse=v			        " middle-click paste with 
 
 " ALE
-let g:ale_linters = {'python': ['flake8'], 'go': ['golint', 'gopls']}
+let g:ale_linters = {'python': ['flake8'], 'go': ['revive', 'gopls']}
 let g:ale_fixers = {'python': ['black', 'isort'], 'go': ['gofmt', 'goimports']}
 let g:ale_fix_on_save = 1
 
