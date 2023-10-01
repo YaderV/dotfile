@@ -1,0 +1,17 @@
+window:
+  option_as_alt: Both
+
+font:
+  normal:
+    family: DroidSansM Nerd Font
+    style: Regular
+  italic:
+    family: DroidSansM Nerd Font
+    style: Italic
+  bold:
+    family: DroidSansM Nerd Font
+    style: Bold
+  bold_italic:
+    family: DroidSansM Nerd Font
+    style: Bold Italic
+  size: 14.0
