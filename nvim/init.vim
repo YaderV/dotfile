@@ -113,10 +113,10 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 " Move panes
-nnoremap <S-h> <C-W>H
-nnoremap <S-j> <C-W>J
-nnoremap <S-k> <C-W>K
-nnoremap <S-l> <C-W>L
+nnoremap <leader>h <C-W>H
+nnoremap <leader>j <C-W>J
+nnoremap <leader>k <C-W>K
+nnoremap <leader>l <C-W>L
 
 " ALE
 :map <leader>a :ALEToggle<cr>
