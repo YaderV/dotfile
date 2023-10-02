@@ -93,10 +93,10 @@ nnoremap <Leader><Leader> :source $MYVIMRC<cr>
 " Moving lines
 " nnoremap <A-j> :m .+1<CR>==
 " nnoremap <A-k> :m .-2<CR>==
-inoremap <A-j> <Esc>:m .+1<CR>==gi
-inoremap <A-k> <Esc>:m .-2<CR>==gi
-vnoremap <A-j> :m '>+1<CR>gv=gv
-vnoremap <A-k> :m '<-2<CR>gv=gv
+inoremap <S-j> <Esc>:m .+1<CR>==gi
+inoremap <S-k> <Esc>:m .-2<CR>==gi
+vnoremap <S-j> :m '>+1<CR>gv=gv
+vnoremap <S-k> :m '<-2<CR>gv=gv
 
 " Nerdtree
 nnoremap <leader>N :NERDTreeFocus<CR>
@@ -113,10 +113,10 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 " Move panes
-nnoremap <A-h> <C-W>H
-nnoremap <A-j> <C-W>J
-nnoremap <A-k> <C-W>K
-nnoremap <A-l> <C-W>L
+nnoremap <S-h> <C-W>H
+nnoremap <S-j> <C-W>J
+nnoremap <S-k> <C-W>K
+nnoremap <S-l> <C-W>L
 
 " ALE
 :map <leader>a :ALEToggle<cr>
