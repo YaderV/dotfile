@@ -10,3 +10,6 @@
 
 ## Tmux
     - Create a syslink from `tmux/tmux.conf` to `~/.tmux.conf`
+
+## Revive
+    - Create a syslink from `revive/revive.toml` to `~/revive.toml`
