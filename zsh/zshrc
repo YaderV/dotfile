@@ -1,3 +1,16 @@
+# general
 PROMPT=$'%~ \n$ '
+
+# vscode
 code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
+
+# go path
 export PATH=$PATH:$(go env GOPATH)/bin
+
+# pyenv virtualenv
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+# ssh
+ssh-add --apple-use-keychain ~/.ssh/id_ed25519
