@@ -6,7 +6,7 @@
     - Create a syslink from `nvim/vim.init` to `~/.config/nvim/vim.init`
 
 ## Alacritty
-    - Create a syslink from `alacritty/alacritty.yml` to `~/.config/alacritty/alacritty.yml`
+    - Create a syslink from `alacritty/alacritty.toml` to `~/.config/alacritty/alacritty.toml`
 
 ## Tmux
     - Create a syslink from `tmux/tmux.conf` to `~/.tmux.conf`
