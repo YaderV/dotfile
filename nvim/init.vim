@@ -4,7 +4,6 @@ call plug#begin()
  Plug 'ryanoasis/vim-devicons'
  Plug 'scrooloose/nerdtree'
  Plug 'preservim/nerdcommenter'
- Plug 'doums/darcula'
  Plug 'jacoborus/tender.vim'
  Plug 'mhinz/vim-startify'
  Plug 'jiangmiao/auto-pairs'
@@ -131,6 +130,6 @@ if (has("termguicolors"))
 endif
 set t_Co=256
 set cursorline
-colorscheme tender 
+colorscheme tender
 " syntax enable
-" colorscheme darcula 
+" colorscheme darcula
