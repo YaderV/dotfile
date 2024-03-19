@@ -46,9 +46,6 @@ return require('packer').startup(function(use)
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
 
-	-- theme
-	use { "rose-pine/neovim", as = "rose-pine" }
-
 	-- lualine
 	use {
 		'nvim-lualine/lualine.nvim',
@@ -57,4 +54,22 @@ return require('packer').startup(function(use)
 
 	-- git
 	use 'lewis6991/gitsigns.nvim'
+
+	-- theme
+	use { "rose-pine/neovim", as = "rose-pine" }
+	use { "ellisonleao/gruvbox.nvim" }
+	use {
+		"chama-chomo/grail",
+		config = function()
+			require("grail").setup()
+		end
+	}
+	use "folke/tokyonight.nvim"
+	use 'shaunsingh/nord.nvim'
+
+	-- tree sitter
+	use {
+		'nvim-treesitter/nvim-treesitter',
+		run = ':TSUpdate'
+	}
 end)
