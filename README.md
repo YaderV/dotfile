@@ -1,9 +1,9 @@
 # Dotfile
 
-## Neo Vim
-    - Install vim-plug. Then run :PlugInstall
-    - Configure your terminal font to use a `nerd fond` in order to use `vim-devicons`
-    - Create a syslink from `nvim/vim.init` to `~/.config/nvim/vim.init`
+## NeoVim
+    - Install packer. Then run :PackerSync
+    - Configure your terminal font to use `Hack Nerd Font` 
+    - Create a syslink from `nvim` to `~/.config/nvim`
 
 ## Alacritty
     - Create a syslink from `alacritty/alacritty.toml` to `~/.config/alacritty/alacritty.toml`
