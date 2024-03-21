@@ -4,6 +4,8 @@ require("ydr.plugins.nvim-tree")
 require("ydr.plugins.lualine")
 require("ydr.plugins.gitsign")
 require("ydr.plugins.tree-sitter")
+require("ydr.plugins.lsp")
+require("ydr.plugins.jabs")
 
 require("ydr.core.options")
 require("ydr.core.keymaps")

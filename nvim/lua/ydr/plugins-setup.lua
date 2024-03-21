@@ -55,6 +55,34 @@ return require('packer').startup(function(use)
 	-- git
 	use 'lewis6991/gitsigns.nvim'
 
+
+	-- tree sitter
+	use {
+		'nvim-treesitter/nvim-treesitter',
+		run = ':TSUpdate'
+	}
+
+	-- buffer
+	use 'matbme/JABS.nvim'
+
+	-- LSP
+	use {
+		'VonHeikemen/lsp-zero.nvim',
+		branch = 'v3.x',
+		requires = {
+			--- Uncomment the two plugins below if you want to manage the language servers from neovim
+			{'williamboman/mason.nvim'},
+			{'williamboman/mason-lspconfig.nvim'},
+
+			-- LSP Support
+			{'neovim/nvim-lspconfig'},
+			-- Autocompletion
+			{'hrsh7th/nvim-cmp'},
+			{'hrsh7th/cmp-nvim-lsp'},
+			{'L3MON4D3/LuaSnip'},
+		}
+	}
+
 	-- theme
 	use { "rose-pine/neovim", as = "rose-pine" }
 	use { "ellisonleao/gruvbox.nvim" }
@@ -65,11 +93,9 @@ return require('packer').startup(function(use)
 		end
 	}
 	use "folke/tokyonight.nvim"
-	use 'shaunsingh/nord.nvim'
-
-	-- tree sitter
-	use {
-		'nvim-treesitter/nvim-treesitter',
-		run = ':TSUpdate'
-	}
+	use "shaunsingh/nord.nvim"
+	use "Yazeed1s/minimal.nvim"
+	use "rebelot/kanagawa.nvim"
+	use { "catppuccin/nvim", as = "catppuccin" }
+	use "jacoborus/tender.vim"
 end)

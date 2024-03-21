@@ -25,3 +25,6 @@ vim.keymap.set("n", "<leader>h", "<C-W>H")
 vim.keymap.set("n", "<leader>j", "<C-W>J")
 vim.keymap.set("n", "<leader>k", "<C-W>K")
 vim.keymap.set("n", "<leader>l", "<C-W>L")
+
+-- buffers
+vim.keymap.set("n", "<leader>b", ":JABSOpen<CR>")
