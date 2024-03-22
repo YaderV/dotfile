@@ -6,23 +6,21 @@ vim.g.loaded_netrwPlugin = 1
 vim.opt.termguicolors = true
 
 require("nvim-tree").setup({
+	filters = {
+		dotfiles = true,
+	},
 	renderer = {
 		icons = {
 			glyphs = {
+				default = "",
 				folder = {
 					arrow_closed = "", -- arrow when folder is closed
 					arrow_open = "", -- arrow when folder is open
 				},
 			},
 			show = {
-				git = false
-			}
-		}
-	}
+				git = false,
+			},
+		},
+	},
 })
-
-
-
-
-
-
