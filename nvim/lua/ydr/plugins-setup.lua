@@ -82,6 +82,7 @@ return require("packer").startup(function(use)
 
 	-- linter
 	use("mfussenegger/nvim-lint")
+	use("rshkarin/mason-nvim-lint")
 
 	-- lsp
 	use({
@@ -95,6 +96,7 @@ return require("packer").startup(function(use)
 			{ "neovim/nvim-lspconfig" },
 			-- Autocompletion
 			{ "hrsh7th/nvim-cmp" },
+			{ "hrsh7th/cmp-buffer" },
 			{ "hrsh7th/cmp-nvim-lsp" },
 			{ "L3MON4D3/LuaSnip" },
 		},
@@ -114,7 +116,6 @@ return require("packer").startup(function(use)
 	use("Yazeed1s/minimal.nvim")
 	use("rebelot/kanagawa.nvim")
 	use({ "catppuccin/nvim", as = "catppuccin" })
-	use("jacoborus/tender.vim")
 	use("jacoborus/tender.vim")
 	use({ "bluz71/vim-nightfly-colors", as = "nightfly" })
 end)

@@ -51,10 +51,10 @@ opt.softtabstop = 4
 opt.termguicolors = true
 
 -- consider the - as part of a whole word
-opt.iskeyword:append("-", "/")
+opt.iskeyword:append({ "-", "/" })
 
 -- don't touch unnamed register when pasting over visual selection
-vim.api.nvim_set_keymap('v', 'p', 'pgvy', { noremap = true })
+vim.api.nvim_set_keymap("v", "p", "pgvy", { noremap = true })
 
 -- syntax highlighting
 vim.cmd([[ syntax enable ]])
