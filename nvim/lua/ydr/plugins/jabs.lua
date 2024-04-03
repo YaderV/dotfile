@@ -1,5 +1,6 @@
 require("jabs").setup({
 	position = { "center", "center" }, -- position = {'<position_x>', '<position_y>'} | <position_x> left, center, right,
+	relative = "editor",
 	sort_mru = true,
 	width = 100, -- default 50
 	height = 30, -- default 10

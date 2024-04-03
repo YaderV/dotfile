@@ -30,7 +30,7 @@ opt.clipboard:append("unnamedplus")
 opt.ttyfast = true
 
 -- enable mouse click
-opt.mouse = a
+opt.mouse = "a"
 
 -- required for vim-signify
 opt.updatetime = 100
