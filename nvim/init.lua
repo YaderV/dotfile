@@ -8,6 +8,7 @@ require("ydr.plugins.lsp")
 require("ydr.plugins.jabs")
 require("ydr.plugins.formatter")
 require("ydr.plugins.nvim-lint")
+require("ydr.plugins.luasnip")
 
 require("ydr.core.options")
 require("ydr.core.keymaps")

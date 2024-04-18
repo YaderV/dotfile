@@ -1,5 +1,5 @@
 # general
-PROMPT=$'%~ \n$ '
+# PROMPT=$'%~ \n$ '
 
 # vscode
 code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
@@ -20,3 +20,5 @@ export NO_PROXY=localhost
 export NVM_DIR="$HOME/.nvm"
 [ -s "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" ] && \. "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" # This loads nvm
 [ -s "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
+
+source /opt/homebrew/opt/spaceship/spaceship.zsh

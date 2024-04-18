@@ -1,5 +1,5 @@
--- leader key 
-vim.g.mapleader = " " 
+-- leader key
+vim.g.mapleader = " "
 
 -- toggle nvim tree
 vim.keymap.set("n", "<leader>n", ":NvimTreeToggle<CR>")
@@ -28,3 +28,12 @@ vim.keymap.set("n", "<leader>l", "<C-W>L")
 
 -- buffers
 vim.keymap.set("n", "<leader>b", ":JABSOpen<CR>")
+
+-- trouble
+vim.keymap.set("n", "<leader>d", function()
+	require("trouble").toggle("document_diagnostics")
+end)
+
+vim.keymap.set("n", "<leader>dw", function()
+	require("trouble").toggle("workspace_diagnostics")
+end)

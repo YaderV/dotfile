@@ -28,7 +28,7 @@ return require("packer").startup(function(use)
 	use({
 		"nvim-tree/nvim-tree.lua",
 		requires = {
-			"nvim-tree/nvim-web-devicons", -- optional
+			"nvim-tree/nvim-web-devicons",
 		},
 	})
 
@@ -84,6 +84,16 @@ return require("packer").startup(function(use)
 	use("mfussenegger/nvim-lint")
 	use("rshkarin/mason-nvim-lint")
 
+	-- snippers
+	use({
+		"L3MON4D3/LuaSnip",
+		-- follow latest release.
+		tag = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
+		-- install jsregexp (optional!:).
+		run = "make install_jsregexp",
+		requires = { "rafamadriz/friendly-snippets" },
+	})
+
 	-- lsp
 	use({
 		"VonHeikemen/lsp-zero.nvim",
@@ -101,6 +111,12 @@ return require("packer").startup(function(use)
 			{ "L3MON4D3/LuaSnip" },
 		},
 	})
+
+	-- diagnostic
+	use({ "folke/trouble.nvim", requires = {
+
+		"nvim-tree/nvim-web-devicons",
+	} })
 
 	-- theme
 	use({ "rose-pine/neovim", as = "rose-pine" })

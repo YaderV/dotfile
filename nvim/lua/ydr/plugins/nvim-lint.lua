@@ -3,7 +3,7 @@ require("mason-nvim-lint").setup()
 lint = require("lint")
 lint.linters_by_ft = {
 	go = { "revive" },
-	javascript = { "eslint" },
+	-- javascript = { "eslint" }, for some reason this is not neaded. Just for reference
 }
 
 vim.api.nvim_create_autocmd({ "BufWritePost" }, {
